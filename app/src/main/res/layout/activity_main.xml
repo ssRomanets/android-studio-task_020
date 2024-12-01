@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mediumPurple"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/mainExersizeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:hint="Главное упражнение"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageViewIV"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Спорт это хорошо"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/beginSportsBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Переход к упражнениям"/>
+
+</LinearLayout>
